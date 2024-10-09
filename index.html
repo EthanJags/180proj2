@@ -251,14 +251,14 @@
             </div>
             <h3>Automating Feature Detection</h3>
             <p>I used the same SIFT detector to find the correspondences between the two images. This outputs a set of key points.</p>
-            <img src="outputs/pointsEthanandMahomes.png" alt="SIFT Detector">
+            <img src="outputs/pointsEthanandMahomes.png" alt="SIFT Detector" style="width: 100%; height: auto;">
             
             <p>Brief description of the gradient magnitude computation: To calculate the gradient magnitude I simply summed the squares of the vertical and horizontal edge images, then square rooted them. This is similar to the L2 norm because light dims according to the inverse square law. I then used a threshold to binarize the image, setting all values greater than 0.1 to 1 and the rest to 0.</p>
             
             <h2>Computing the "Mid-way" Face</h2>
             <h3>Approach</h3>
             <div class="image-container">
-                    <img src="outputs/pointsandtriangles.png" alt="Points and Triangles">
+                    <img src="outputs/pointsandtriangles.png" alt="Points and Triangles" style="width: 100%; height: auto;">
                     <p>Correspondence Points and Delaunay Triangulation</p>
             </div>
             <p>To compute the mid-way face, we first calculate the average shape by taking a weighted element-wise average of the correspondence points from both images. For the exact mid-way face, we use a weighting factor of 0.5.</p>
